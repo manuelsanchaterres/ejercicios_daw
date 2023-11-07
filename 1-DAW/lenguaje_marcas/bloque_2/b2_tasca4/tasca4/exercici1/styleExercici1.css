@@ -1,0 +1,12 @@
+
+/* mediante el selector de etiqueta body
+aplicamos los estilos especificados en el selector 
+mediante las correspondientes declaraciones (propiedad y valor)*/
+
+body {
+
+    background-color: lightblue;
+    color: darkblue;
+    font-family: 'Times New Roman', Times, serif;
+    
+}

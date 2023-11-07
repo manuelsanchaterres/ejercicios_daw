@@ -1,0 +1,103 @@
+
+body {
+
+    background-color: lightblue;
+
+}
+
+/* Ejercicio 1 - Selector de etiqueta p para aplicar propiedad color 
+de fuente a amarillo */
+
+p {
+
+    color: yellow;
+    
+}
+
+/* Ejercicio 2 - Selector de clase para aplicar estilos a botones con atributo de
+clase igual a main-buttons-button */
+
+.boton-azul {
+
+    background-color: lightblue;
+    border-radius: 15%;
+    font-weight: 600;
+}
+
+
+/* Ejercicio 3 - Selector de id para aplicar estilos a botones valor atributo
+id="boton-unico" */
+
+#boton-unico {
+
+    color: white;
+
+}
+
+/* Ejercicio 4 - Selector de id para aplicar estilos a botones valor atributo
+id="boton-unico" */
+
+a[target="_blank"] {
+
+    color: green;
+    display: flex;
+}
+
+/* Ejercicio 5 - Selector combinado asignando estilos sólo a los elementos
+p hijos de padre div con clase contenedor */
+
+.contenedor p {
+
+    color: red;
+
+}
+
+/* Ejercicio 6 - Pseudo-clase "hover" para gestionar el estilo
+css ante el cambio de estado del enlace a */
+
+nav a:hover {
+
+    color: purple;
+
+}
+
+/* Ejercicio 7 - Pseudo-elemento after 
+para elemento a con atributo target="_blank" */
+
+a[target="_blank"]::after {
+
+    content:" ->";
+
+}
+
+/* Ejercicio 8 - Selector combinado aplicado a todos los list items
+cuyo padre en un elemento ul con atributo clase="menu"*/
+
+.menu li {
+
+    list-style:armenian;
+
+}
+
+/* Ejercicio 9 - Selector combinado seleccionando el octavo elemento (ya que tengo varios p dentro) 
+tipo div cuyo padre es otro div con atributo clase="contenedor" */
+
+.contenedor div:nth-child(8) {
+
+    color: darkorange;
+    font-weight: 800;
+    font-size: 2rem;
+
+}
+
+/* Ejercicio 10 - Selector combinado seleccionando el octavo elemento (ya que tengo varios p dentro) 
+tipo div cuyo padre es otro div con atributo clase="contenedor" */
+
+h2 p {
+
+    border: 2px solid black;
+    color: brown;
+    font-weight: 800;
+    font-size: 1.25rem;
+    
+}

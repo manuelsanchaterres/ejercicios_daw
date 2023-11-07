@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Audios</title>
 
+    <!--elemento "link" html en head del documento, enlazando a la hoja global de estilos-->
+    
+    <link rel="stylesheet" href="/1-DAW/lenguaje_marcas/bloque_2/css/style.css"> 
+
     <style>
 
-        audio {
+        video{
 
             border: 0.5rem solid black;
             border-radius: 0.25rem;
@@ -19,9 +22,10 @@
 
             width: 100%;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;        
 
         }
+
         body {
                 /* background-color: hsl(226deg, 63%, 45%); */
                 box-sizing: border-box;
@@ -132,8 +136,8 @@
 
 
 
-    </style>
 
+    </style>
 
 </head>
 
@@ -159,7 +163,7 @@
                     <div class="header-main-links">
 
                         <li><a href="index.html">principal</a></li>
-                        <li><a href="videos.html">videos</a></li>
+                        <li><a href="audios.html">audios</a></li>
                         <li><a href="taules.html">taules</a></li>
 
                     </div>
@@ -175,12 +179,13 @@
     </header>
 
     <main>
-        <h1 style="text-align: center;">Audios</h1>
 
-        <div>
+        <h1 style="text-align: center;">Videos</h1>
 
-            <audio src="/b2_tasca3/audios/RainFallMedium PE1005201.mp3" controls style="border: 0.25rem solid black;border-radius: 0.5rem;"></audio>
-            <audio src="/b2_tasca3/audios/ThunderClap4HvyC SDT2042602.mp3" controls style="border: 0.25rem solid black;border-radius: 0.5rem;"></audio>
+        <div  width="100%" style="display: flex; justify-content: space-around;">
+
+            <video src="https://www.shutterstock.com/shutterstock/videos/1104007275/preview/stock-footage-cardboard-boxes-warehouse-worker-confidently-signs-a-cardboard-box-with-a-marker-in-the-premises.webm" controls autoplay muted loop ></video>
+            <video src="https://www.shutterstock.com/shutterstock/videos/1083259621/preview/stock-footage-data-warehouse-keywords-animation-background-loop-k.webm" controls autoplay muted></video>
 
         </div>
 
@@ -200,7 +205,6 @@
 
 
     </footer>
-
 
 </body>
 

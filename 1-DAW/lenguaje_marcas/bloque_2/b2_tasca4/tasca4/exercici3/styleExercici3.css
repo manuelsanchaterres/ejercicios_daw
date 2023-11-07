@@ -1,0 +1,17 @@
+
+/* aplicando css al elemento semántico body, dichos estilos se aplican
+a todos los elementos contenidos en el body del documento */
+
+body {
+    
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* selector combinado, todos los hijos p de span */
+
+span p {
+
+    color: #555;
+}

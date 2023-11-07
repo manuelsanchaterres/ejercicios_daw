@@ -1,0 +1,18 @@
+
+
+/* selectores de clase, "classe1" y "classe2"
+lo cuales aplican estilos a los elementos HTML con los
+atributos de clase mencionados arriba */
+
+.classe1 {
+
+    background-color: #ff80c0;
+    color: green;
+}
+
+.classe2 {
+
+    background-color: grey;
+    color: red;
+    
+}
