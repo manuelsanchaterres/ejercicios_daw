@@ -82,7 +82,7 @@ cuyo padre en un elemento ul con atributo clase="menu"*/
 /* Ejercicio 9 - Selector combinado seleccionando el octavo elemento (ya que tengo varios p dentro) 
 tipo div cuyo padre es otro div con atributo clase="contenedor" */
 
-.contenedor div:nth-child(8) {
+.contenedor div:nth-of-type(3) {
 
     color: darkorange;
     font-weight: 800;
