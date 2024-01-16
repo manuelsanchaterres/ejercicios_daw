@@ -1,0 +1,44 @@
+<!--2. Crea un formulari que tengui:
+• Dos camps de text de longitud variable d’una una sola línia), i no es poden deixar en blanc.
+• Un camp numèric que si es pot deixar en blanc.
+• A més ha de tenir el botó per enviar.
+• Agrupa els dos primers camps amb l'etiqueta <fieldset> afegint una descripció del grup amb
+• l'etiqueta <legend>.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Exercici 2</title>
+	<link rel="stylesheet" href="../style/tasca7.css">
+</head>
+
+<body>
+
+	<main>
+
+		<form class="form" method="post" action="emailto:msanchaterres@cifpfbmoll.eu">
+			<div class="form-row">
+				<div class="form-element">
+					<label for="text1">Campo de Texto 1</label>
+					<input type="text" id="text1" name="text1"  required  pattern="/(^[\S]){1,}/" placeholder="Introduzca Texto Campo 1">
+					<div class="form-alert">Campo 1 Es Obligatorio *</div>
+				</div>
+				<!-- <div class="form-element">
+					<label for="text1">Campo de Texto 1</label>
+					<input type="text" id="text1" name="text1" required placeholder="Introduzca Texto Campo 1">
+					<div class="form-alert">Campo 1 Es Obligatorio *</div>
+				</div>				 -->
+			</div>
+			<button class="btn form-btn" type="submit">Enviar</button>
+		</form>
+
+	</main>
+    <!-- <script type="module" src="../javascript/index.js"></script> -->
+
+</body>
+
+</html>

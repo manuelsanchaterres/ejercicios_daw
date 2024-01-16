@@ -1,0 +1,48 @@
+<!--Crea un formulari que empri el mètode POST, que envii les dades per correu electrònic (el teu per
+	exemple). El formulari ha de mostrar els següents camps:
+• Un camp que demani el nom de l'usuari.
+• Un camp que permeti triar un color (input type="color").
+• Un camp de text que permeti a l'usuari escriure un text llarg on expliqui per què ha triat el
+color.
+• Un botó per enviar les dades del formulari.-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Exercici 1</title>
+	<link rel="stylesheet" href="../style/tasca7.css">
+</head>
+
+<body>
+
+	<main>
+
+		<form class="form" method="post" action="emailto:msanchaterres@cifpfbmoll.eu">
+			<div class="form-row">
+				<div class="form-element">
+					<label class="form-label" for="name">Nombre</label>
+					<input class="form-input" type="text" id="name" name="name" placeholder="Introduzca Su Nombre">
+				</div>
+				<div class="form-element">
+					<label class="form-label" for="color">Color</label>
+					<input class="form-input" type="color" id="color" name="color" placeholder="Introduzca Su Nombre">
+				</div>
+			</div>
+			<div class="form-row-textarea">
+				<div class="form-element">
+					<label class="form-label" for="reasonColor">Motivo Elección Color</label>
+					<textarea class="form-textarea" name="reasonColor" id="reasonColor"></textarea>
+				</div>
+			</div>
+
+			<button class="btn form-btn" type="submit">Enviar</button>
+		</form>
+
+	</main>
+
+</body>
+
+</html>

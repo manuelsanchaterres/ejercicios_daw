@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasca 6</title>
+    <link rel="stylesheet" href="../style/tasca7.css">
+</head>
+<body>
+
+    <main>
+
+        
+        <div class="contact-form">
+                            
+            <form data-url="http://localhost:8080/api/front/contact-information/">
+
+                <div class="two-columns">
+                    <div class="column">
+
+                        <div class="form-element">
+
+                            <div class="form-element-label">
+
+                                <label for="fname">First Name</label>
+
+                            </div>
+
+                            <div class="form-element-input">
+
+                                <input data-validate="only-letters" type="text" id="fname" name="name" placeholder="Introduce your Name" >
+
+                            </div>
+
+
+
+                        </div><!--CAMPO NOMBRE DEL FORMULARIO, LO HE CREADO COMO DIV PERO SE PODRÁ CREAR UN FORMULARIO COMO ELEMENTO ÚNICO -->
+                    </div>
+                    <div class="column"> 
+                                                               
+                        <div class="form-element">
+
+                            <div class="form-element-label">
+
+                                <label for="lname">Last Name</label>
+
+                            </div>
+
+                            <div class="form-element-input">
+
+                                <input data-validate="only-letters" type="text" id="lname" name="surNameOne" placeholder="Introduce your Last Name">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="two-columns">
+                    <div class="column">
+                        <div class="form-element">
+                            <div class="form-element-label">
+                                <label for="telephone">Telephone</label>
+                            </div>
+                            <div class="form-element-input">
+                                <input data-validate="telephone" type="tel" id="telephone" name="phoneNumber" placeholder="Introduce your Telephone">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="form-element">
+                            <div class="form-element-label">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="form-element-input">
+                                <input data-validate="email" type="email" id="email" name="email" placeholder="Introduce your email">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="one-column">
+
+                    <div class="column">
+
+                        <div class="form-element">
+
+                            <div class="form-element-label">
+
+                                <label for="subject">Subject</label>
+
+                            </div>
+
+                            <div class="form-element-input">
+
+                                <select type="text" name ="subject" style="width:100%">
+
+                                    <option name="subject1" >affagagagagaga</option>
+                                    <option name="subject2">agagagaga</option>
+                                    <option name="subject3">ahsahahaha</option>
+
+                                </select>
+
+                            </div>
+
+                            <div class="form-element-counter">
+
+                                <span >affagagagagaga</span>
+                                
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="one-column">
+
+                    <div class="column">
+
+                        <div class="form-element">
+
+                            <div class="form-element-label">
+
+                                <label for="message">Message</label>
+
+                            </div>
+
+                            <div class="form-element-input">
+
+                                <textarea name="message" class="validate-characters" data-max="250" maxlength="250" placeholder="Write your Message"> </textarea>
+
+                            </div>
+
+                            <div class="form-element-counter">
+
+                                <span ></span>
+                                
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="form-reset-button">
+
+                    <div class="form-button">
+
+                        <button class="custom-button form-send-button">Form Submmit</button><!--BOTÓN ENVIAR FORMULARIO DE CONTACTO-->
+
+                    </div>
+
+                    <div class="reset-button">
+
+                        <button class="custom-button">Reset Form</button><!--BOTÓN RESTABLECER DATOS FORMULARIO DE CONTACTO-->
+
+                    </div>
+
+                </div>
+                
+                <notification-message type= "success" text= "Formulario Enviado Correctamente"></notification-message>
+
+            </form>
+
+        </div>  
+
+
+    </main>
+    
+</body>
+</html>
