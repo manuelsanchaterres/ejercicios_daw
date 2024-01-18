@@ -6,7 +6,7 @@
 // import {ejercicio6} from './ejercicio6.js';
 // import {ejercicio7} from './ejercicio7.js';
 // import {ejercicio8} from './ejercicio8.js';
-// import {ejercicio9} from './ejercicio9.js';
+import {ejercicio9} from './ejercicio9.js';
 // import {ejercicio10} from './ejercicio10.js';
 // import {ejercicio11} from './ejercicio11.js';
 // import {ejercicio12} from './ejercicio12.js';
@@ -17,7 +17,7 @@
 // import {ejercicio17} from './ejercicio17.js';
 // import {ejercicio18} from './ejercicio18.js';
 // import {ejercicio19} from './ejercicio19.js';
-import {ejercicio20} from './ejercicio20.js';
+// import {ejercicio20} from './ejercicio20.js';
 
 
 // ejercicio1();
@@ -28,7 +28,7 @@ import {ejercicio20} from './ejercicio20.js';
 // ejercicio6();
 // ejercicio7();
 // ejercicio8();
-// ejercicio9();
+ejercicio9();
 // ejercicio10();
 // ejercicio11();
 // ejercicio12();
@@ -39,5 +39,5 @@ import {ejercicio20} from './ejercicio20.js';
 // ejercicio17();
 // ejercicio18();
 // ejercicio19();
-ejercicio20();
+// ejercicio20();
 

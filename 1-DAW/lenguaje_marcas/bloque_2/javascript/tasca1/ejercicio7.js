@@ -8,19 +8,26 @@ export let ejercicio7 = () => {
 
   if (notaIntroduïda < 5) {
     document.body.innerHTML += `Un ${notaIntroduïda} és insuficient.`
-  } else if (notaIntroduïda >=5 && notaIntroduïda < 6) {
+  } 
+  else if (notaIntroduïda >=5 && notaIntroduïda < 6) {
     document.body.innerHTML += `Un ${notaIntroduïda} és suficient.`
-  } else if (notaIntroduïda >=6 && notaIntroduïda < 7) {
+  } 
+  else if (notaIntroduïda >=6 && notaIntroduïda < 7) {
     document.body.innerHTML += `Un ${notaIntroduïda} és bé.`
-  } else if (notaIntroduïda >=7 && notaIntroduïda < 8) {
+  } 
+  else if (notaIntroduïda >=7 && notaIntroduïda < 8) {
     document.body.innerHTML += `Un ${notaIntroduïda} és notable baix.`
-  } else if (notaIntroduïda >=8 && notaIntroduïda < 9) {
+  } 
+  else if (notaIntroduïda >=8 && notaIntroduïda < 9) {
     document.body.innerHTML += `Un ${notaIntroduïda} és notable alt.`
-  } else if (notaIntroduïda >=9 && notaIntroduïda < 10) {
+  } 
+  else if (notaIntroduïda >=9 && notaIntroduïda < 10) {
     document.body.innerHTML += `Un ${notaIntroduïda} és excel·lent.`
-  } else if (notaIntroduïda == 10) {
+  } 
+  else if (notaIntroduïda == 10) {
     document.body.innerHTML += `Un ${notaIntroduïda} és mátrícula d'honor.`
-  } else {
+  } 
+  else {
     document.body.innerHTML += `No es poden introduir notes negatives o més grans que 10.`
   }
 };

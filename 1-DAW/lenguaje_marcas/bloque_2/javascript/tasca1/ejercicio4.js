@@ -12,13 +12,11 @@ export let ejercicio4 = () => {
   dadesUsuari.push(edat);
   const estatura = parseFloat(prompt("Introdueix la teva estatura"));
   dadesUsuari.push(estatura);
-  const estatCivil = prompt("Introdueix el teu estat civil");
+  const estatCivil = prompt("Introdueix el teu estat civil").toLowerCase();
   dadesUsuari.push(estatCivil);
 
   if (estatCivil == 'casat') {
-
    console.log(dadesUsuari);
-
   } else {
 
     dadesUsuari.forEach(dadaUsuari => {

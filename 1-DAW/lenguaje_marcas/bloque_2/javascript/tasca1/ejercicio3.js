@@ -9,9 +9,7 @@ export let ejercicio3 = () => {
   let sumaNombres = 0;
 
   for (let i=0; i < nombres.length; i++) {
-
     sumaNombres += nombres[i];
-
   }
 
   console.log(sumaNombres);
