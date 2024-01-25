@@ -10,7 +10,6 @@ export let ejercicio13 = () => {
     nombres.push(parseInt(prompt("Introdueix nombre 3")));
 
     nombres.forEach(nombre => {
-        
         major = major > nombre ? major : nombre;
     });
 

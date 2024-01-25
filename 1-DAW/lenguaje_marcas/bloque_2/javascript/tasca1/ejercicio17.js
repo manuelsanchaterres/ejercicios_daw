@@ -19,8 +19,6 @@ export let ejercicio17 = () => {
             alert(nombreAleatori > nombreIntroduït ? "El número és major":"El número es menor");
             nombreIntroduït = parseInt(prompt("Introdueix nombre elegit"));
         }
-
-
     }
 
     alert(`Enhorabona, has encertat el nombre aleatori: ${nombreAleatori}`);

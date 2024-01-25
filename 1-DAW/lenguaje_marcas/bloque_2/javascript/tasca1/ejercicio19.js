@@ -11,7 +11,7 @@ export let ejercicio19 = () => {
 
     for (let index = 0; index < 6; index++) {
         
-        colorAleatori += arrayHexadecimals[Math.floor((Math.random() * 16 + 1))-1];
+        colorAleatori += arrayHexadecimals[Math.floor(((Math.random() * 15) + 1))];
         
     }
 

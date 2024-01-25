@@ -5,8 +5,6 @@ export let ejercicio11 = () => {
 
  let paraula = prompt("Introdueix cadena de text");
 
- let paraules = paraula.split(" ");
-
- console.log(`${paraula} conté ${paraules.length} paraules.`);
- document.body.innerText += `${paraula} conté ${paraules.length} paraules.`
+ console.log(`${paraula} conté ${paraula.split(" ").length} paraules.`);
+ document.body.innerText += `${paraula} conté ${paraula.split(" ").length} paraules.`
 };

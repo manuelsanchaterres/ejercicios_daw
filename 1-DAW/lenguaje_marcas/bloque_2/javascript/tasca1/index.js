@@ -6,7 +6,7 @@
 // import {ejercicio6} from './ejercicio6.js';
 // import {ejercicio7} from './ejercicio7.js';
 // import {ejercicio8} from './ejercicio8.js';
-import {ejercicio9} from './ejercicio9.js';
+// import {ejercicio9} from './ejercicio9.js';
 // import {ejercicio10} from './ejercicio10.js';
 // import {ejercicio11} from './ejercicio11.js';
 // import {ejercicio12} from './ejercicio12.js';
@@ -28,7 +28,7 @@ import {ejercicio9} from './ejercicio9.js';
 // ejercicio6();
 // ejercicio7();
 // ejercicio8();
-ejercicio9();
+// ejercicio9();
 // ejercicio10();
 // ejercicio11();
 // ejercicio12();
