@@ -1,3 +1,4 @@
+import { userAnswersDataBase } from "./userAnswersDataBase.js";
 const form = document.querySelector(".form");
 const formButton = document.querySelector(".btn");
 const dateFormInput = document.getElementById("sportStartDate");
@@ -15,7 +16,6 @@ let userInfoForm = () => {
     const userAnswers = document.querySelector(".user-answers");
     const formInputs = document.querySelectorAll(".form-input");
     userAnswers.textContent = " ";
-
     const userInfo = {};
     // creamos objeto userInfo con los datos extraido del formulario
     for (let index = 0; index < formInputs.length; index++) {
@@ -23,40 +23,54 @@ let userInfoForm = () => {
         userInfo[formInputs[index].getAttribute("name")] = formInputs[index].value;
     }
 
-    if (!sportInputValuesArray.includes(sportInputValue)){
+    // if (!sportInputValuesArray.includes(sportInputValue)){
 
-        sportInputValuesArray.push(sportInputValue);
+    //     sportInputValuesArray.push(sportInputValue);
     
-    }
+    // }
 
-    sportInputValuesArray.forEach(sportValue => {
+    let userAnswersArray = userAnswersDataBase(userInfo);
+    console.log(userAnswersArray);
+    userAnswersArray.forEach(sportSection => {
 
-        userAnswers.innerHTML += `
-        <section id="${sportValue}">
-            <ul style="padding:1rem">
-                <li><span>${sportValue}</span>:
-                    <ul style="padding-left:2.5rem">
-                    </ul>
-                </li>
-            </ul>
-        </section>`
+        console.log(sportSection[Object.keys(sportSection)].length);
+        if (sportSection[Object.keys(sportSection)].length > 0){
+
+            userAnswers.innerHTML += `
+            <section id="${Object.keys(sportSection)}">
+                <ul style="padding:1rem">
+                    <li><span>${Object.keys(sportSection)}</span>:
+                        <ul style="padding-left:2.5rem">
+                        </ul>
+                    </li>
+                </ul>
+            </section>`
+
+            const sectionListUl = document.querySelector(`section#${Object.keys(sportSection)}>ul>li>ul`);
+
+            sportSection[Object.keys(sportSection)].forEach(userAnswer => {
+                const newLiElement = document.createElement('li');
+                newLiElement.innerHTML =`
+            
+                    <span>${userAnswer.userName}</span>, 
+                    ${userAnswer.age} anys, 
+                    color camiseta ${userAnswer.shirtColor}, 
+                    ${String(new Date(userAnswer.sportStartDate).getDate()).padStart(2, '0')}
+                    /${String(new Date(userAnswer.sportStartDate).getMonth() + 1).padStart(2, '0')}
+                    /${new Date(userAnswer.sportStartDate).getFullYear()}
+            
+                `;
+            
+                sectionListUl.appendChild(newLiElement);
+            });
+
+
+        }
+    
 
     });
 
-    const sectionListUl = document.querySelector(`section#${sportInputValue}>ul>li>ul`);
-    const newLiElement = document.createElement('li');
-    newLiElement.innerHTML =`
-
-        <span>${userInfo.userName}</span>, 
-        ${userInfo.age} anys, 
-        color camiseta ${userInfo.shirtColor}, 
-        ${String(new Date(userInfo.sportStartDate).getDate()).padStart(2, '0')}
-        /${String(new Date(userInfo.sportStartDate).getMonth() + 1).padStart(2, '0')}
-        /${new Date(userInfo.sportStartDate).getFullYear()}
-
-    `;
-
-    sectionListUl.appendChild(newLiElement);
+  
 };
 
 
