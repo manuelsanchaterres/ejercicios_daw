@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/main.css">
+    <title>Document</title>
+    <style>
+        li>span {text-transform: capitalize;}
+        ul{list-style-type:circle;}
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <h1>Els nostres usuaris són esportistes</h1>
+    </header>
+    <main style="display: grid;grid-template-columns: 1fr 1fr">
+        <div class="user-answers" style="background-color: red;padding-left: 1rem"></div>
+        <form class="form" id="form" style="margin: auto">
+            <div class="form-row">
+                <label for="userName" class="form-label">Nom d'usuari</label>
+                <input type="text" name= "userName" id="userName" placeholder="Introdueixi nom d'usuari" class="form-input" required/>
+            </div>
+            <div class="form-row">
+                <label for="age" class="form-label">Edat</label>
+                <input type="number" min="0" name= "age" id="age" inputmode="numeric" placeholder="Quina edat tens?" class="form-input" required/>
+            </div>
+            <div class="form-row">
+                <label for="sport" class="form-label">Esport</label>
+                <select type="text" name= "sport" id="sport" placeholder="Quin esport practiques?" class="form-input" required>
+                    <option value="" disabled selected>Selecciona Esport</option>
+                    <option value="futbol">Futbol</option>
+                    <option value="basquet">Basquet</option>
+                    <option value="tennis">Tennis</option>
+                    <option value="voleibol">Voleibol</option>
+
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="shirtColor" class="form-label">Color Camiseta</label>
+                <input type="text" name= "shirtColor" id="shirtColor" placeholder="De quin color es la camiseta del teu club?" class="form-input" required>
+            </div>
+            <div class="form-row">
+                <label for="sportStartDate" class="form-label">Data Inici Pràctica Esport</label>
+                <input type="date" max="2022-12-31" name="sportStartDate" id="sportStartDate" placeholder="Des de quina data practiques aquest esport?" class="form-input" required>
+            </div>
+            <button class="btn btn-block">Enviar Formulari</button>
+        </form>
+    </main>
+    
+
+
+    <script type="module" src="../javascript/userInfoForm.js"></script>
+</body>
+</html>

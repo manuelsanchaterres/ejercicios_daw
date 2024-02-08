@@ -24,19 +24,19 @@ let imageVisible = () => {
 }
 
 let imageBigger = () => {
-
-    alert("Image Bigger");
+    const computedWidth = window.getComputedStyle(imageElement).getPropertyValue("width");
+    const widthValue = computedWidth.split("px")[0];
+    imageElement.style.width = `${widthValue*1.5}px`;
 }
 
 let imageSmaller = () => {
 
-    alert("Image Smaller");
+    const computedWidth = window.getComputedStyle(imageElement).getPropertyValue("width");
+    const widthValue = computedWidth.split("px")[0];
+    imageElement.style.width = `${widthValue*0.75}px`;
 }
 
 let imageAmmendments = (button) => {
-    console.log(button.getAttribute("id"));
-    
-
     switch (button.getAttribute("id")) {
         case "image-buttons-invisible":
             imageInvisible();
